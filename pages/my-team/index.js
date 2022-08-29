@@ -1,6 +1,6 @@
 import React from 'react';
 import DataTable, { createTheme } from 'react-data-table-component';
-import { tableData, columnsData } from './data';
+import { tableData, columnsData } from '../../src/data';
 import { useThemeContextConsumer } from '../../context/themeProvider';
 import IncomeBox from './subcomponents/incomeBox';
 import ReferalBox from './subcomponents/referalBox';

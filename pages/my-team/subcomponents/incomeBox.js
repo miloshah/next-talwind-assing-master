@@ -1,5 +1,5 @@
 import React from 'react';
-import { incomeStaticData } from '../data';
+import { incomeStaticData } from '../../../src/data';
 
 const IncomeBox = () => {
   return (
