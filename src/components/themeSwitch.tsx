@@ -6,7 +6,7 @@ import { useThemeContextConsumer } from '../../context/themeProvider';
 const ThemeSwitch = () => {
   const { hanldeModeChange } = useThemeContextConsumer();
   const [colorTheme, setTheme] = useDarkTheme();
-  const [darkSide, setDarkSide] = useState(
+  const [darkSide, setDarkSide] = useState<boolean>(
     colorTheme === 'light' ? true : false
   );
 
@@ -15,7 +15,7 @@ const ThemeSwitch = () => {
   }, []);
 
   const toggleDarkMode = () => {
-    setTheme(colorTheme);
+    if(typeof setTheme === 'function') setTheme(colorTheme);
     setDarkSide(!darkSide);
     hanldeModeChange(!darkSide);
   };

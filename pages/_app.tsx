@@ -2,8 +2,9 @@ import Head from 'next/head';
 import 'tailwindcss/tailwind.css';
 import DashboardLayout from '../src/dashboard/layout';
 import { ThemeContextProvider } from '../context/themeProvider';
+import type { AppProps } from 'next/app';
 
-const MyApp = ({ Component, pageProps }) => {
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <Head>

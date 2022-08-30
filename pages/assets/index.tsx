@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Assets = () => {
+const Assets: React.FC = () => {
   return <h1>Assets Page.</h1>;
 };
 

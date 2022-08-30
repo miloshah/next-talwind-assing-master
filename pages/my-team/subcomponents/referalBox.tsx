@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ReferalBox = () => {
+const ReferalBox : React.FC = () => {
   return (
     <div className="bg-slate-50 shadow dark:bg-darkModeBg p-5 mb-5 md:mb-0">
       <h2 className="dark:text-lightModeText">Referal system:</h2>

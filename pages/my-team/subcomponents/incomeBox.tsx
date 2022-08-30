@@ -1,7 +1,7 @@
 import React from 'react';
 import { incomeStaticData } from '../../../src/data';
 
-const IncomeBox = () => {
+const IncomeBox: React.FC = () => {
   return (
     <div className="bg-slate-50  shadow dark:bg-darkModeBg dark:lightModeText p-5 mb-5 md:mb-0">
       <section className="grid grid-cols-1 md:grid-cols-2 md:gap-10">

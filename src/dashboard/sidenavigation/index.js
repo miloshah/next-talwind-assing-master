@@ -14,7 +14,7 @@ const style = {
   default: `bg-lightModeBg dark:bg-darkModeBg h-screen overflow-y-auto top-0 lg:flex lg:relative lg:z-auto`,
 };
 
-export default function SideNavigation({ mobilePosition }) {
+export const SideNavigation = ({ mobilePosition }) => {
   const { open, ref } = useToggle();
   return (
     <aside
@@ -28,4 +28,6 @@ export default function SideNavigation({ mobilePosition }) {
       </div>
     </aside>
   );
-}
+};
+
+export default SideNavigation;

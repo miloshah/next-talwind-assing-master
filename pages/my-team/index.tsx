@@ -25,7 +25,7 @@ createTheme(
   'light'
 );
 
-const MyTeam = () => {
+const MyTeam : React.FC = () => {
   const { mode } = useThemeContextConsumer();
 
   return (

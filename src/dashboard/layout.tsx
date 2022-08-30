@@ -9,7 +9,11 @@ const style = {
   main: `bg-gray-100 h-screen overflow-auto pb-36 pt-4 px-2 md:pb-8 md:px-4 lg:px-6 lg:rounded-tl-3xl`,
 };
 
-export default function DashboardLayout({ children }) {
+interface DashboardLayoutProps {
+  children : React.ReactNode
+}
+
+export const DashboardLayout : React.FC<DashboardLayoutProps>= ({ children }) => {
   return (
     <DashboardProvider>
       <div className={style.container}>
@@ -25,3 +29,4 @@ export default function DashboardLayout({ children }) {
     </DashboardProvider>
   );
 }
+export default DashboardLayout
